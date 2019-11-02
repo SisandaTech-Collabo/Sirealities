@@ -5,9 +5,13 @@ using Vuforia;
 
 public class SiteeTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
-	#region PROTECTED_MEMBER_VARIABLES
+    AudioSource audioSource;
+    public GameObject ScanIndicator;
+    public AudioSource InsideHeart;
+    public AudioSource Outsideheart;
+    #region PROTECTED_MEMBER_VARIABLES
 
-	protected TrackableBehaviour mTrackableBehaviour;
+    protected TrackableBehaviour mTrackableBehaviour;
 	protected TrackableBehaviour.Status m_PreviousStatus;
 	protected TrackableBehaviour.Status m_NewStatus;
 
@@ -20,7 +24,9 @@ public class SiteeTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 		mTrackableBehaviour = GetComponent<TrackableBehaviour>();
 		if (mTrackableBehaviour)
 			mTrackableBehaviour.RegisterTrackableEventHandler(this);
-	}
+
+        audioSource = GetComponent<AudioSource>();
+    }
 
 	protected virtual void OnDestroy()
 	{
@@ -79,8 +85,13 @@ public class SiteeTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 			var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
 			var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
 
-			// Enable rendering:
-			foreach (var component in rendererComponents)
+            audioSource.Play();
+            ScanIndicator.SetActive(false);
+            InsideHeart.Play();
+            Outsideheart.Play();
+
+            // Enable rendering:
+            foreach (var component in rendererComponents)
 				component.enabled = true;
 
 			// Enable colliders:
@@ -102,8 +113,12 @@ public class SiteeTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 			var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
 			var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
 
-			// Disable rendering:
-			foreach (var component in rendererComponents)
+           
+            ScanIndicator.SetActive(true);
+            InsideHeart.Stop();
+            Outsideheart.Stop();
+            // Disable rendering:
+            foreach (var component in rendererComponents)
 				component.enabled = false;
 
 			// Disable colliders:
