@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/BrainLoader.unity
+    guid: 72efda7488eb0442bbf82be843fcc704
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Brain.unity
+    guid: 0b767c7c0d0654558add94475dece69f
   m_configObjects: {}

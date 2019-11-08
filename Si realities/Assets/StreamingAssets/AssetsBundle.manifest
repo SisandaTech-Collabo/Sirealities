@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 216399745
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: brain
+      Dependencies: {}
+    Info_1:
+      Name: digestive
+      Dependencies: {}
+    Info_2:
+      Name: eyeexternal
+      Dependencies: {}
+    Info_3:
+      Name: eyeinternal
+      Dependencies: {}
+    Info_4:
+      Name: heart
+      Dependencies: {}
+    Info_5:
+      Name: kidney
+      Dependencies: {}
+    Info_6:
+      Name: lungs
+      Dependencies: {}
+    Info_7:
+      Name: lymphatic
+      Dependencies: {}
+    Info_8:
+      Name: nervous
+      Dependencies: {}
+    Info_9:
+      Name: skeleton
+      Dependencies: {}
