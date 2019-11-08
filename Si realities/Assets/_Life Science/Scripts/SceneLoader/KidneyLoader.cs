@@ -1,18 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 public class KidneyLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private AssetBundleCreateRequest bundleRequest;
+
+    private void Start()
     {
-        
+        bundleRequest = AssetBundle.LoadFromFileAsync(Path.Combine(Application.streamingAssetsPath, "kidney"));
+        if (bundleRequest == null)
+        {
+            Debug.Log("Failed to load AssetBundle!");
+            return;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (bundleRequest.isDone)
+        {
+            SceneManager.LoadScene("Kidney");
+        }
     }
 }

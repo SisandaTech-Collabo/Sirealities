@@ -22,7 +22,7 @@ public class LungsLoader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("Heart");
+			SceneManager.LoadScene("Lungs");
 		}
 	}
 }
