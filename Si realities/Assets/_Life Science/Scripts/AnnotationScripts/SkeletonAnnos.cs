@@ -17,57 +17,27 @@ public class SkeletonAnnos : MonoBehaviour
     public GameObject FibulaInfo;
     public GameObject TarsalsInfo;
 
-    
-
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+   
     void OnMouseDown()
     {
       
-        //if (gameObject.name == "EyeSocket")
-        //{
-            
-        //    EyeSocketInfo.SetActive(true);
-        //    SkullInfo.SetActive(false);
-        //    CervicalInfo.SetActive(false);
-        //    ScapulaInfo.SetActive(false);
-        //    SternumInfo.SetActive(false);
-        //    SacrumInfo.SetActive(false);
-        //    PatellaInfo.SetActive(false);
-        //    TibiaInfo.SetActive(false);
-        //    FibulaInfo.SetActive(false);
-        //    TarsalsInfo.SetActive(false);
-
-        //}
 
 		switch (gameObject.name)
 		{
 			case "EyeSocket":
-				EyeSocketInfo.SetActive(true);
-				SkullInfo.SetActive(false);
-				CervicalInfo.SetActive(false);
-				ScapulaInfo.SetActive(false);
-				SternumInfo.SetActive(false);
-				SacrumInfo.SetActive(false);
-				PatellaInfo.SetActive(false);
-				TibiaInfo.SetActive(false);
-				FibulaInfo.SetActive(false);
-				TarsalsInfo.SetActive(false);
-				break;
+			EyeSocketInfo.SetActive(true);
+			SkullInfo.SetActive(false);
+			CervicalInfo.SetActive(false);
+			ScapulaInfo.SetActive(false);
+			SternumInfo.SetActive(false);
+			SacrumInfo.SetActive(false);
+			PatellaInfo.SetActive(false);
+			TibiaInfo.SetActive(false);
+			FibulaInfo.SetActive(false);
+		    TarsalsInfo.SetActive(false);
+			break;
 
-		}
-        if (gameObject.name == "Skull")
-        {
-            
+            case "Skull":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(true);
             CervicalInfo.SetActive(false);
@@ -78,13 +48,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
+            break;
 
-        }
-
-
-        if (gameObject.name == "CervicalVerterbra")
-        {
-            
+            case "CervicalVerterbra":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(true);
@@ -95,12 +61,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-        }
+            break;
 
-       
-        if (gameObject.name == "Scapula")
-        {
-            
+            case "Scapula":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -111,12 +74,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-        }
+            break;
 
-    
-        if (gameObject.name == "Sternum")
-        {
-            
+            case "Sternum":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -127,12 +87,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-            
-        }
+            break;
 
-        if (gameObject.name == "Sacrum")
-        {
-
+            case "Sacrum":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -143,11 +100,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-        
-        }
+            break;
 
-        if (gameObject.name == "Patella")
-        {
+            case "Patella":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -158,11 +113,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-        }
+            break;
 
-        
-        if (gameObject.name == "Tibia")
-        {
+            case "Tibia":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -173,11 +126,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(true);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(false);
-            
-        }
+            break;
 
-        if (gameObject.name == "Fibula")
-        {
+            case "Fibula":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -188,13 +139,9 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(true);
             TarsalsInfo.SetActive(false);
-           
-        }
+            break;
 
-       
-        if (gameObject.name == "Tarsals")
-        {
-            
+            case "Tarsals":
             EyeSocketInfo.SetActive(false);
             SkullInfo.SetActive(false);
             CervicalInfo.SetActive(false);
@@ -205,9 +152,7 @@ public class SkeletonAnnos : MonoBehaviour
             TibiaInfo.SetActive(false);
             FibulaInfo.SetActive(false);
             TarsalsInfo.SetActive(true);
-            
+            break;
         }
- 
     }
-
 }
