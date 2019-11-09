@@ -5,14 +5,21 @@ using UnityEngine;
 public class BrainLogic : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    Animator brainAnim;
+
     void Start()
     {
-        
+        brainAnim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Expand()
     {
-        
+        brainAnim.SetTrigger("Open");
+    }
+
+    public void Shrink()
+    {
+        brainAnim.SetTrigger("Close");
     }
 }
