@@ -22,6 +22,37 @@ public class MenuBehaviour : MonoBehaviour {
                 SceneManager.LoadScene("Info");
                 break;
 
+            case (3):
+                SceneManager.LoadScene("BrainLoader");
+                break;
+            case (4):
+                SceneManager.LoadScene("HeartLoader");
+                break;
+            case (5):
+                SceneManager.LoadScene("SkeletonLoader");
+                break;
+            case (6):
+                SceneManager.LoadScene("DigestiveLoader");
+                break;
+            case (7):
+                SceneManager.LoadScene("EyeExternalLoader");
+                break;
+            case (8):
+                SceneManager.LoadScene("EyeInternalLoader");
+                break;
+            case (9):
+                SceneManager.LoadScene("KidneyLoader");
+                break;
+            case (10):
+                SceneManager.LoadScene("LungsLoader");
+                break;
+
+
+
+
+
+
+
         }
     }
 }

@@ -5,16 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Life Science/Scenes/Loader Scenes/BrainLoader.unity
-    guid: 72efda7488eb0442bbf82be843fcc704
-  - enabled: 0
-    path: Assets/_Life Science/Scenes/Experiement Scenes/Brain.unity
-    guid: 0b767c7c0d0654558add94475dece69f
-  - enabled: 0
-    path: Assets/_Life Science/Scenes/Experiement Scenes/Skeleton.unity
-    guid: c116ff6779e3b4023ba47ac031379464
   - enabled: 1
     path: Assets/Menu HandlingScene/Scenes/Explore.unity
     guid: 990f1425b6bf74b44a36b9275d342b5f
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/BrainLoader.unity
+    guid: 72efda7488eb0442bbf82be843fcc704
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/HeartLoader.unity
+    guid: 1676f8aa12677469aae7af68ce127e19
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/SkeletonLoader.unity
+    guid: 5111861f37d2a4c24a9c81ed0703e7fe
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/DigestiveLoader.unity
+    guid: e11e4d76730c944d7be817cb7972f911
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/EyeInternalLoader.unity
+    guid: 25d9466ac580945269363d4fac86da06
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/EyeExternalLoader.unity
+    guid: bfba983753ca540c5a67868cf618a1e7
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/KidneyLoader.unity
+    guid: 511778dfe0fb149c68a26d8cde03580c
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Loader Scenes/LungsLoader.unity
+    guid: 28332fc16e8d84254b2262ff5a77cb5d
   m_configObjects: {}
