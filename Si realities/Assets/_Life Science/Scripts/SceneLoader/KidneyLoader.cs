@@ -22,7 +22,14 @@ public class KidneyLoader : MonoBehaviour
     {
         if (bundleRequest.isDone)
         {
-            SceneManager.LoadScene("Kidney");
+            StartCoroutine(OpenScene());
         }
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Kidney");
+
+        }
+        
     }
 }

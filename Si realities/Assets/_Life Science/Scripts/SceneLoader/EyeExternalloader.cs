@@ -22,8 +22,16 @@ public class EyeExternalloader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("EyeExternal");
+            StartCoroutine(OpenScene());
+            
 		}
-	}
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("EyeExternal");
+
+        }
+        
+    }
 }
 

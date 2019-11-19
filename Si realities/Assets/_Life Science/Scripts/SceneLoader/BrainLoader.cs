@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System;
 
 public class BrainLoader : MonoBehaviour
 {
@@ -22,7 +23,17 @@ public class BrainLoader : MonoBehaviour
     {
         if (bundleRequest.isDone)
         {
-            SceneManager.LoadScene("Brain");
+            StartCoroutine(OpenScene());
+            
         }
+        
     }
+
+    IEnumerator OpenScene()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Brain");
+
+    }
+
 }

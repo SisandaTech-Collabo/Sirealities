@@ -22,7 +22,15 @@ public class heartloader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("Heart");
+            StartCoroutine(OpenScene());
+            
 		}
-	}
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Heart");
+
+        }
+       
+    }
 }

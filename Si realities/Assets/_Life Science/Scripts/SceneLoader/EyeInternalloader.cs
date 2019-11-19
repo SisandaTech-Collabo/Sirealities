@@ -22,7 +22,16 @@ public class EyeInternalloader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("EyeInternal");
+            StartCoroutine(OpenScene());
+            
 		}
-	}
+
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("EyeInternal");
+
+        }
+        
+    }
 }

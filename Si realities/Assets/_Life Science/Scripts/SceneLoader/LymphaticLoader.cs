@@ -22,7 +22,15 @@ public class LymphaticLoader : MonoBehaviour
     {
         if (bundleRequest.isDone)
         {
+            StartCoroutine(OpenScene());
+            
+        }
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
             SceneManager.LoadScene("LymphaticSystem");
         }
+
     }
+        
 }

@@ -22,8 +22,16 @@ public class SkeletonLoader : MonoBehaviour
     {
         if (bundleRequest.isDone)
         {
-            SceneManager.LoadScene("Skeleton");
+            StartCoroutine(OpenScene());
+            
         }
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Skeleton");
+
+        }
+   
     }
 
 }

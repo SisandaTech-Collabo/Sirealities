@@ -22,7 +22,17 @@ public class DigestiveLoader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("Digestive System");
+            StartCoroutine(OpenScene());
+            
+            
 		}
-	}
+
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Digestive System");
+
+        }
+        
+    }
 }

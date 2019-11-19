@@ -22,7 +22,15 @@ public class LungsLoader : MonoBehaviour
 	{
 		if (bundleRequest.isDone)
 		{
-			SceneManager.LoadScene("Lungs");
+            StartCoroutine(OpenScene());
+            
 		}
-	}
+        IEnumerator OpenScene()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Lungs");
+
+        }
+        
+    }
 }
