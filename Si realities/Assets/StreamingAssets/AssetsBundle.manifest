@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 100068167
+CRC: 3788319777
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -31,4 +31,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_9:
       Name: skeleton
+      Dependencies: {}
+    Info_10:
+      Name: sitee
       Dependencies: {}

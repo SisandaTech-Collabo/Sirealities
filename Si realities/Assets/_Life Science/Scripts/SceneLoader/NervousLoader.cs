@@ -10,19 +10,26 @@ public class NervousLoader : MonoBehaviour
 
     private void Start()
     {
-        bundleRequest = AssetBundle.LoadFromFileAsync(Path.Combine(Application.streamingAssetsPath, "nervous"));
-        if (bundleRequest == null)
-        {
-            Debug.Log("Failed to load AssetBundle!");
-            return;
-        }
+        //bundleRequest = AssetBundle.LoadFromFileAsync(Path.Combine(Application.streamingAssetsPath, "nervous"));
+        //if (bundleRequest == null)
+        //{
+        //    Debug.Log("Failed to load AssetBundle!");
+        //    return;
+        //}
+        StartCoroutine(OpenScene());
     }
 
-    private void Update()
+    //private void Update()
+    //{
+    //    if (bundleRequest.isDone)
+    //    {
+    //        SceneManager.LoadScene("NervousSystem");
+    //    }
+    //}
+    IEnumerator OpenScene()
     {
-        if (bundleRequest.isDone)
-        {
-            SceneManager.LoadScene("NervousSystem");
-        }
+        yield return new WaitForSeconds(0.1f);
+        SceneManager.LoadScene("Skeleton");
+
     }
 }

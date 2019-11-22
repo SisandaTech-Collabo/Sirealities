@@ -9,27 +9,33 @@ EditorBuildSettings:
     path: Assets/Menu HandlingScene/Scenes/Explore.unity
     guid: 990f1425b6bf74b44a36b9275d342b5f
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/BrainLoader.unity
-    guid: 72efda7488eb0442bbf82be843fcc704
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Brain.unity
+    guid: 0b767c7c0d0654558add94475dece69f
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/HeartLoader.unity
-    guid: 1676f8aa12677469aae7af68ce127e19
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Digestive System.unity
+    guid: 1d18e6e01212e408d8f1fe0744c22891
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/SkeletonLoader.unity
-    guid: 5111861f37d2a4c24a9c81ed0703e7fe
+    path: Assets/_Life Science/Scenes/Experiement Scenes/EyeExternal.unity
+    guid: fb4ec4b486e304be295cdc183e781834
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/DigestiveLoader.unity
-    guid: e11e4d76730c944d7be817cb7972f911
+    path: Assets/_Life Science/Scenes/Experiement Scenes/EyeInternal.unity
+    guid: 6421586c143f64101bd1769b4f170e35
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/EyeInternalLoader.unity
-    guid: 25d9466ac580945269363d4fac86da06
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Heart.unity
+    guid: 84d9a0c0f285547659c533194b540f81
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/EyeExternalLoader.unity
-    guid: bfba983753ca540c5a67868cf618a1e7
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Kidney.unity
+    guid: caf2596302b584c48935eaf4d0ce5e95
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/KidneyLoader.unity
-    guid: 511778dfe0fb149c68a26d8cde03580c
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Lungs.unity
+    guid: 343651a6ce5fb4a3bad66865ca3abbec
   - enabled: 1
-    path: Assets/_Life Science/Scenes/Loader Scenes/LungsLoader.unity
-    guid: 28332fc16e8d84254b2262ff5a77cb5d
+    path: Assets/_Life Science/Scenes/Experiement Scenes/LymphaticSystem.unity
+    guid: 08c4b086b4fcc473ba09c4e5e34ea655
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Experiement Scenes/NervousSystem.unity
+    guid: 2b66691b5d44840209188d8b06731b28
+  - enabled: 1
+    path: Assets/_Life Science/Scenes/Experiement Scenes/Skeleton.unity
+    guid: c116ff6779e3b4023ba47ac031379464
   m_configObjects: {}

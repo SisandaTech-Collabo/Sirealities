@@ -11,7 +11,7 @@ public class MenuBehaviour : MonoBehaviour {
         {
             default:
             case (0):
-                SceneManager.LoadScene("HeartSitee");
+                SceneManager.LoadScene("Explore");
                 break;
 
             case (1):
@@ -23,28 +23,28 @@ public class MenuBehaviour : MonoBehaviour {
                 break;
 
             case (3):
-                SceneManager.LoadScene("BrainLoader");
+                SceneManager.LoadScene("Brain");
                 break;
             case (4):
-                SceneManager.LoadScene("HeartLoader");
+                SceneManager.LoadScene("Heart");
                 break;
             case (5):
-                SceneManager.LoadScene("SkeletonLoader");
+                SceneManager.LoadScene("Skeleton");
                 break;
             case (6):
-                SceneManager.LoadScene("DigestiveLoader");
+                SceneManager.LoadScene("Digestive");
                 break;
             case (7):
-                SceneManager.LoadScene("EyeExternalLoader");
+                SceneManager.LoadScene("EyeExternal");
                 break;
             case (8):
-                SceneManager.LoadScene("EyeInternalLoader");
+                SceneManager.LoadScene("EyeInternal");
                 break;
             case (9):
-                SceneManager.LoadScene("KidneyLoader");
+                SceneManager.LoadScene("Kidney");
                 break;
             case (10):
-                SceneManager.LoadScene("LungsLoader");
+                SceneManager.LoadScene("Lungs");
                 break;
 
 
